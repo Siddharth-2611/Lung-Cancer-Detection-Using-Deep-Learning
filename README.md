@@ -62,6 +62,29 @@ The system:
   - Normal
 
 ---
+## Dataset
+
+### 📊 Dataset Distribution (70% Train / 10% Validation / 20% Test)
+
+| Cancer Type             | Train | Validation | Test | Total |
+|-------------------------|-------|------------|------|-------|
+| Adenocarcinoma          | 237   | 34         | 68   | 338   |
+| Large Cell Carcinoma    | 131   | 19         | 37   | 187   |
+| Squamous Cell Carcinoma | 182   | 26         | 52   | 260   |
+| Normal                  | 150   | 21         | 44   | 215   |
+| **Total**               | **700** | **100**  | **200** | **1000** |
+
+The dataset contains 1000 CT scan images across four classes.  
+The data is divided into training (70%), validation (10%), and testing (20%) sets.  
+- **Training set**: Used to learn model parameters.  
+- **Validation set**: Used for hyperparameter tuning.  
+- **Test set**: Used for final evaluation on unseen data.
+
+### Dataset Link : 
+https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
+
+### Trained Model File (.h5) : 
+https://drive.google.com/file/d/1RvW1FUE0R2kid0PZzdidD5wSF-9OpCld/view?usp=sharing
 
 ## 🏋️ Training Strategy
 
