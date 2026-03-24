@@ -2,7 +2,6 @@
 
 An AI-powered web application that detects lung cancer from CT scan images and generates a smart medical report with explainable AI (Grad-CAM).
 
----
 **Upload CT scan → AI prediction → Tumor highlight → Smart medical report (PDF)**
 
 ![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)
