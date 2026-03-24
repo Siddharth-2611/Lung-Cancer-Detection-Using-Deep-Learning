@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lung Cancer Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="main">
+
+    <h1 class="title">Lung Cancer Detection</h1>
+
+    <div class="container">
+
+        <!-- LEFT: IMAGE BOX -->
+        <div class="left" onclick="document.getElementById('image').click()">
+
+            <input type="file" id="image" onchange="previewImage()" hidden>
+
+            <!-- Placeholder -->
+            <div id="uploadText">Click to Upload CT Scan</div>
+
+            <!-- Preview -->
+            <img id="preview" class="preview-box">
+
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div class="right">
+            <input id="name" placeholder="Name">
+            <input id="age" placeholder="Age">
+            <input id="gender" placeholder="Gender">
+            <input id="doctor" placeholder="Doctor">
+            <input id="hospital" placeholder="Hospital">
+
+            <button class="analyze-btn" onclick="predict()">Analyze</button>
+
+            <!-- Progress -->
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="result"></div>
+
+    <div class="download-container">
+    <button id="downloadBtn" onclick="downloadPDF()" style="display:none;">
+        Download Report
+    </button>
+</div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
